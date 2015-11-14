@@ -1,0 +1,6 @@
+<launch>   	
+	
+	<node name="trajGeneration" pkg="traj_generation" type="trajGeneration" output="screen"/>
+        <node name="flightControl" pkg="traj_generation" type="flightControl" output="screen"/>
+
+</launch>

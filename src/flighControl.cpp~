@@ -1,0 +1,20 @@
+#include <iostream>
+#include <ros/ros.h>
+#include <testturtle/FlightCmd.h>
+/*
+class CFlightControl
+{
+  public:
+  
+  private:
+};
+*/
+
+int main(int argc, char **argv)
+{
+
+  ros::init(argc, argv, "flightControl");// flip = the node's name
+  CSubscriber subImage;
+  ros::spin();
+  return 0;
+}

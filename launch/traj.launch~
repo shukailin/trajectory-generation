@@ -1,0 +1,6 @@
+<launch>   	
+	
+	<node name="test1Fly" pkg="testturtle" type="test1Fly" output="screen"/>
+        <node name="flightControl" pkg="testturtle" type="flightControl" output="screen"/>
+
+</launch>
