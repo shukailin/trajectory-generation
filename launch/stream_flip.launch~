@@ -1,9 +1,0 @@
-<launch>   	
-	
-	<env name="GSCAM_CONFIG" value ="v4l2src device=/dev/video0 ! video/x-raw-rgb,framerate=30/1 ! ffmpegcolorspace"/>
-	<node name="gscam" pkg="gscam" type="gscam"/>
-	<node machine="tk1" name="image_view1" pkg="image_view" type="image_view" args ="image:=/camera/image_raw"/>
-	<node machine="shukai" name="flip" pkg="ros_assignment" type="flip"/>
-	<node name="image_view2" pkg="image_view" type="image_view" args ="image:=flipImage"/>
-
-</launch>
